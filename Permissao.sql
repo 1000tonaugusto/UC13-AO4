@@ -1,0 +1,8 @@
+CREATE LOGIN testePerm
+WITH PASSWORD = '1234'
+
+CREATE USER testePerm FOR LOGIN testePerm
+
+GRANT SELECT TO testePerm
+
+SELECT * FROM Habilidades
